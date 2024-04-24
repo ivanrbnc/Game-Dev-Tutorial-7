@@ -1,0 +1,41 @@
+[gd_scene format=2]
+
+[node name="World 1" type="Spatial"]
+
+[node name="CSGCombiner" type="CSGCombiner" parent="."]
+use_collision = true
+
+[node name="Room 1" type="CSGBox" parent="CSGCombiner"]
+use_collision = true
+invert_faces = true
+width = 80.0
+height = 30.0
+depth = 30.0
+
+[node name="Room 2" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.9605, -0.0517702, -14.5655 )
+invert_faces = true
+width = 50.0
+height = 30.0
+depth = 50.0
+
+[node name="Hole" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2159, -28.5962, -0.0733624 )
+invert_faces = true
+width = 30.0
+height = 30.0
+depth = 30.0
+
+[node name="Floating Box" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.59104, -19.6873, 0.497128 )
+use_collision = true
+width = 10.0
+height = 10.0
+depth = 10.0
+
+[node name="Floating Box2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4674, -21.0124, -1.9613 )
+use_collision = true
+width = 10.0
+height = 10.0
+depth = 10.0
